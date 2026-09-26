@@ -6,8 +6,8 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY basics.cob .
+COPY hello_world.cob .
 
-RUN cobc -x -free -o basics basics.cob
+RUN cobc -x -free -o hello_world hello_world.cob
 
-CMD ["./basics"]
+CMD ["./hello_world"]
