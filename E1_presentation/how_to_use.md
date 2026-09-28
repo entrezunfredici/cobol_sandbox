@@ -14,23 +14,24 @@ Exemple COBOL introduisant les 4 divisions d'un programme (IDENTIFICATION, ENVIR
 
 ## Utilisation
 
-1. Se placer dans ce dossier (`cd basics`)
+1. Se placer dans ce dossier (`cd E1_presentation`)
 2. Construire l'image Docker :
 
    ```bash
-   docker build -f dockerfile -t cobol-basics .
+   docker build -f dockerfile -t cobol-presentation .
    ```
-
 3. Lancer le conteneur :
 
    ```bash
-   docker run --rm cobol-basics
+   docker run --rm cobol-presentation
    ```
 
 ## Résultat attendu
 
 ```
-Alice
+Bonjour !
+Je commence mon apprentissage du COBOL.
+Objectif : Mainframe.
 ```
 
 Le programme stocke `"Alice"` dans la variable `WS-NOM` puis l'affiche.
